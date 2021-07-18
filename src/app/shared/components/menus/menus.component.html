@@ -1,0 +1,16 @@
+<h6 class="mt-2 p-2 alert-success text-center">Human Coronaviruses</h6>
+<ul class="ms-3 scroll-gray" style="max-height: 40vh;">
+    <ng-container *ngFor="let item of pages">
+        <li>
+            <a [routerLink]="['page']" [queryParams]="{ code: item?.state_code }" (click)="spin()">{{ item?.state_name }}</a>
+        </li>
+    </ng-container>
+</ul>
+<h6 class="mt-2 p-2 alert-success text-center">Vietnam Virus Map</h6>
+<ul class="ms-3 scroll-gray" style="max-height: 65vh;">
+    <ng-container *ngFor="let item of provinces">
+        <li>
+            <a [routerLink]="['map']" [queryParams]="{ code: item?.state_code }" (click)="spin()">{{ item?.state_name }}</a>
+        </li>
+    </ng-container>
+</ul>
