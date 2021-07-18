@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params } from '@angular/router';
+import { ActivatedRoute, Params, Router } from '@angular/router';
 import { IMenuIFrame, MenuMap } from 'src/app/shared/components/menus/menu-frame';
 
 
@@ -15,13 +15,18 @@ export class MapIframeComponent implements OnInit {
   public urls: IMenuIFrame[] = MenuMap;
 
   constructor(
+    private router: Router,
     private aRoute: ActivatedRoute,
   ) {
-    this.aRoute.queryParams.subscribe(params => {
+    this.aRoute.params.subscribe(params => {
       if (params) {
         this.params = params;
         const url = this.urls.find((f: IMenuIFrame) => f.state_code === params['code']);
-        this.url = url ? url : this.urls[0];
+        if (url) {
+          this.url = url;
+        } else {
+          this.router.navigate(['/']);
+        }
       }
     });
   }

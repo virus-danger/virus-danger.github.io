@@ -2,7 +2,8 @@
 <ul class="ms-3 scroll-gray" style="max-height: 40vh;">
     <ng-container *ngFor="let item of pages">
         <li>
-            <a [routerLink]="['page']" [queryParams]="{ code: item?.state_code }" (click)="spin()">{{ item?.state_name }}</a>
+            <a *ngIf="item?.state_code === 'home'" [routerLink]="['']" [routerLinkActive]="'text-white'" [routerLinkActiveOptions]="{exact: true}" (click)="spin()">{{ item?.state_name }}</a>
+            <a *ngIf="item?.state_code !== 'home'" [routerLink]="['page', item?.state_code]" [routerLinkActive]="'text-white'" (click)="spin()">{{ item?.state_name }}</a>
         </li>
     </ng-container>
 </ul>
@@ -10,7 +11,7 @@
 <ul class="ms-3 scroll-gray" style="max-height: 65vh;">
     <ng-container *ngFor="let item of provinces">
         <li>
-            <a [routerLink]="['map']" [queryParams]="{ code: item?.state_code }" (click)="spin()">{{ item?.state_name }}</a>
+            <a [routerLink]="['map', item?.state_code]" [routerLinkActive]="'text-white'" (click)="spin()">{{ item?.state_name }}</a>
         </li>
     </ng-container>
 </ul>

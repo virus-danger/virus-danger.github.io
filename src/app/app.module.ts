@@ -7,12 +7,14 @@ import { MenusComponent } from './shared/components/menus/menus.component';
 import { SharedModule } from './shared/shared.module';
 import { MapIframeComponent } from './components/map-iframe/map-iframe.component';
 import { IframeComponent } from './components/iframe/iframe.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MapIframeComponent,
-    IframeComponent
+    IframeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
