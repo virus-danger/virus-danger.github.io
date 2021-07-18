@@ -26,8 +26,10 @@
       <app-menus></app-menus>
     </div>
     <div class="alert alert-warning mb-0 fixFacebookAdd text-center">
-      <a target="_blank" href="https://facebook.com/id1892">
-        <span class="alert-warning">Coronavirus Disease</span>
+      <a href="javascript:void(0)">
+        <span class="alert-warning" data-bs-toggle="modal" data-bs-target="#nocviBackdrop">NCOVI</span>
+        <span class="alert-warning mx-1">|</span>
+        <span class="alert-warning" data-bs-toggle="modal" data-bs-target="#bluezoneBackdrop">BlueZone</span>
       </a>
     </div>
   </nav>
@@ -48,6 +50,113 @@
       </div>
     </div>
   </main>
+
+  <!-- Modal - NCOVI -->
+  <div class="modal fade" id="nocviBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="nocviBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h5 class="modal-title" id="nocviBackdropLabel">Tải app khai báo y tế NCOVI bằng mã QR</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="android-tab" data-bs-toggle="tab" data-bs-target="#android"
+                type="button" role="tab" aria-controls="android" aria-selected="true">Android</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="ios-tab" data-bs-toggle="tab" data-bs-target="#ios" type="button" role="tab"
+                aria-controls="ios" aria-selected="false">IOS</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+                role="tab" aria-controls="contact" aria-selected="false">Đường Dây Nóng Bộ Y Tế</button>
+            </li>
+          </ul>
+          <div class="tab-content text-center" id="myTabContent">
+            <div class="tab-pane fade show active" id="android" role="tabpanel" aria-labelledby="android-tab">
+              <img src="assets/images/ncovi-android.svg" alt="android-ncovi" width="300px">
+            </div>
+            <div class="tab-pane fade" id="ios" role="tabpanel" aria-labelledby="ios-tab">
+              <img src="assets/images/ncovi-ios.svg" alt="ios-ncovi" width="300px">
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+              <div class="text-start p-4">
+                <h6 class="text-danger">ĐƯỜNG DÂY NÓNG BỘ Y TẾ</h6>
+                <p>- Điện thoại: <b><a href="callto:19009095" class="text-dark">1900.9095</a></b></p>
+                <p>- Email: <b><a href="mailto:duongdaynong@moh.gov.vn" class="text-dark">duongdaynong@moh.gov.vn</a></b></p>
+                <h6 class="text-danger">THANH TRA BỘ</h6>
+                <p>- Điện thoại: <b><a href="callto:0462732160" class="text-dark">04.62732160</a></b></p>
+                <p class="mb-0">- Email: <b><a href="mailto:thanhtra@moh.gov.vn" class="text-dark">thanhtra@moh.gov.vn</a></b></p>
+              </div>
+            </div>
+            <p>NCOVI là ứng dụng chính thức của Bộ Y tế và Bộ Thông tin và Truyền thông nhằm hỗ trợ người dân toàn quốc
+              khai báo y tế tự nguyện.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal - BlueZone -->
+  <div class="modal fade" id="bluezoneBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="bluezoneBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content ">
+        <div class="modal-header">
+          <h5 class="modal-title" id="bluezoneBackdropLabel">Tải app BlueZone cảnh báo tiếp xúc gần - QR</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="android-tab-bluezone" data-bs-toggle="tab" data-bs-target="#androidBlueZone"
+                type="button" role="tab" aria-controls="androidBlueZone" aria-selected="true">Android</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="ios-tab-bluezone" data-bs-toggle="tab" data-bs-target="#iosBlueZone" type="button" role="tab"
+                aria-controls="iosBlueZone" aria-selected="false">IOS</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab-bluezone" data-bs-toggle="tab" data-bs-target="#contactBlueZone" type="button"
+                role="tab" aria-controls="contactBlueZone" aria-selected="false">Đường Dây Nóng Bộ Y Tế</button>
+            </li>
+          </ul>
+          <div class="tab-content text-center" id="myTabContent">
+            <div class="tab-pane fade show active" id="androidBlueZone" role="tabpanel" aria-labelledby="android-tab-bluezone">
+              <img src="assets/images/bluezone-android.svg" alt="android-ncovi" width="300px">
+              <br>
+              <a href="https://bluezone.gov.vn/" target="_blank" class="text-primary">Cách hệ thống hoạt động</a>
+            </div>
+            <div class="tab-pane fade" id="iosBlueZone" role="tabpanel" aria-labelledby="ios-tab-bluezone">
+              <img src="assets/images/bluezone-ios.svg" alt="ios-ncovi" width="300px">
+              <br>
+              <a href="https://bluezone.gov.vn/" target="_blank" class="text-primary">Cách hệ thống hoạt động</a>
+            </div>
+            <div class="tab-pane fade" id="contactBlueZone" role="tabpanel" aria-labelledby="contact-tab-bluezone">
+              <div class="text-start p-4">
+                <h6 class="text-danger">ĐƯỜNG DÂY NÓNG BỘ Y TẾ</h6>
+                <p>- Điện thoại: <b><a href="callto:19009095" class="text-dark">1900.9095</a></b></p>
+                <p>- Email: <b><a href="mailto:duongdaynong@moh.gov.vn" class="text-dark">duongdaynong@moh.gov.vn</a></b></p>
+                <h6 class="text-danger">THANH TRA BỘ</h6>
+                <p>- Điện thoại: <b><a href="callto:0462732160" class="text-dark">04.62732160</a></b></p>
+                <p class="mb-0">- Email: <b><a href="mailto:thanhtra@moh.gov.vn" class="text-dark">thanhtra@moh.gov.vn</a></b></p>
+              </div>
+            </div>
+            <p>Ứng dụng cảnh báo nếu bạn đã tiếp xúc gần người nhiễm COVID-19.</p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
