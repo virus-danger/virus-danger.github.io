@@ -11,6 +11,11 @@ export const MenuPage = [
         "state_iframe": 'https://corona.kompa.ai'
     },
     {
+        "state_code": "health-declaration",
+        "state_name": "Khai Báo Y Tế",
+        "state_iframe": 'https://tokhaiyte.vn'
+    },
+    {
         "state_code": "who",
         "state_name": "WHO Covid-19",
         "state_iframe": 'https://covid19.who.int'
