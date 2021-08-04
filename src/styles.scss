@@ -29,10 +29,21 @@ body {
     &_title {
       display: none;
     }
+    span {
+      &.alert-success {
+        font-size: 16px;
+      }
+    }
   }
   #main {
     left: 0px !important;
     min-width: 100% !important;
+    h4 {
+      &.alert-success {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+      }
+    }
   }
 }
 
@@ -41,6 +52,14 @@ body {
     display: none;
     &_title {
       display: block;
+    }
+  }
+  #main {
+    h4 {
+      &.alert-success {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+      }
     }
   }
 }
@@ -243,7 +262,7 @@ p {
 .app-logo {
   -webkit-animation: app-logo-spin infinite 10s linear;
   animation: app-logo-spin infinite 10s linear;
-  height: 100px;
+  height: 85px;
 }
 @-webkit-keyframes app-logo-spin {
   from {
