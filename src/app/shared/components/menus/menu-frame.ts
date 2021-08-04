@@ -22,8 +22,9 @@ export const MenuPage = [
     },
     {
         "state_code": "jhu",
-        "state_name": "Johns Hopkins University ",
-        "state_iframe": 'https://coronavirus.jhu.edu/map.html'
+        "state_name": "Johns Hopkins University",
+        "state_iframe": 'https://www.arcgis.com/apps/dashboards/bda7594740fd40299423467b48e9ecf6'
+        // "state_iframe": 'https://coronavirus.jhu.edu/map.html'
     },
 ]
 export const MenuMap = [
