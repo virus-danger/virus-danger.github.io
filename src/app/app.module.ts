@@ -8,13 +8,14 @@ import { SharedModule } from './shared/shared.module';
 import { MapIframeComponent } from './components/map-iframe/map-iframe.component';
 import { IframeComponent } from './components/iframe/iframe.component';
 import { HomeComponent } from './components/home/home.component';
+import { MenusCollapseComponent } from './shared/components/menus/menus-collapse.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MapIframeComponent,
     IframeComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,6 +23,6 @@ import { HomeComponent } from './components/home/home.component';
     SharedModule
   ],
   providers: [],
-  bootstrap: [AppComponent, MenusComponent]
+  bootstrap: [AppComponent, MenusComponent, MenusCollapseComponent]
 })
 export class AppModule { }

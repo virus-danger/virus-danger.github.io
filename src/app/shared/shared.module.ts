@@ -1,3 +1,4 @@
+import { MenusCollapseComponent } from './components/menus/menus-collapse.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MenusComponent } from './components/menus/menus.component';
@@ -11,7 +12,8 @@ import { LoadingComponent } from './components/loading/loading.component';
   declarations: [
     MenusComponent,
     SafeUrlPipe,
-    LoadingComponent
+    LoadingComponent,
+    MenusCollapseComponent
   ],
   imports: [
     CommonModule,

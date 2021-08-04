@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <title>Human CoronaVirus COVID-2019</title>
   <base href="/">
+  <meta name="keywords" content="Covid-19, Bản đồ Covid-19, Báo cáo số ca nhiễm Covid-19">
+  <meta name="author" content="DaiDH">
+  <meta name="description" content="Tổng hợp những phân tích dự báo về Covid-19 cho người dùng qua chart đồ thị">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="assets/images/virus.png" />
 </head>
@@ -36,9 +39,22 @@
   <main id="main">
     <div class="mx-2">
       <h4 class="text-center alert alert-success py-4 my-0">
-        <a href="/">
+        <a href="/" id="navbar_title">
           <span class="alert-success">www.virus-danger.github.io</span>
         </a>
+        <nav id="navbar" class="navbar navbar-dark">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="/">
+              <span class="alert-success">www.virus-danger.github.io</span>
+            </a>
+          </div>
+          <div class="collapse" id="navbarToggleExternalContent">
+            <app-menus-collapse></app-menus-collapse>
+          </div>
+        </nav>
       </h4>
       <div class="m-0">
         <div class="text-center">
@@ -86,10 +102,12 @@
               <div class="text-start p-4">
                 <h6 class="text-danger">ĐƯỜNG DÂY NÓNG BỘ Y TẾ</h6>
                 <p>- Điện thoại: <b><a href="callto:19009095" class="text-dark">1900.9095</a></b></p>
-                <p>- Email: <b><a href="mailto:duongdaynong@moh.gov.vn" class="text-dark">duongdaynong@moh.gov.vn</a></b></p>
+                <p>- Email: <b><a href="mailto:duongdaynong@moh.gov.vn"
+                      class="text-dark">duongdaynong@moh.gov.vn</a></b></p>
                 <h6 class="text-danger">THANH TRA BỘ</h6>
                 <p>- Điện thoại: <b><a href="callto:0462732160" class="text-dark">04.62732160</a></b></p>
-                <p class="mb-0">- Email: <b><a href="mailto:thanhtra@moh.gov.vn" class="text-dark">thanhtra@moh.gov.vn</a></b></p>
+                <p class="mb-0">- Email: <b><a href="mailto:thanhtra@moh.gov.vn"
+                      class="text-dark">thanhtra@moh.gov.vn</a></b></p>
               </div>
             </div>
             <p>NCOVI là ứng dụng chính thức của Bộ Y tế và Bộ Thông tin và Truyền thông nhằm hỗ trợ người dân toàn quốc
@@ -115,20 +133,23 @@
         <div class="modal-body">
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="android-tab-bluezone" data-bs-toggle="tab" data-bs-target="#androidBlueZone"
-                type="button" role="tab" aria-controls="androidBlueZone" aria-selected="true">Android</button>
+              <button class="nav-link active" id="android-tab-bluezone" data-bs-toggle="tab"
+                data-bs-target="#androidBlueZone" type="button" role="tab" aria-controls="androidBlueZone"
+                aria-selected="true">Android</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="ios-tab-bluezone" data-bs-toggle="tab" data-bs-target="#iosBlueZone" type="button" role="tab"
-                aria-controls="iosBlueZone" aria-selected="false">IOS</button>
+              <button class="nav-link" id="ios-tab-bluezone" data-bs-toggle="tab" data-bs-target="#iosBlueZone"
+                type="button" role="tab" aria-controls="iosBlueZone" aria-selected="false">IOS</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="contact-tab-bluezone" data-bs-toggle="tab" data-bs-target="#contactBlueZone" type="button"
-                role="tab" aria-controls="contactBlueZone" aria-selected="false">Đường Dây Nóng Bộ Y Tế</button>
+              <button class="nav-link" id="contact-tab-bluezone" data-bs-toggle="tab" data-bs-target="#contactBlueZone"
+                type="button" role="tab" aria-controls="contactBlueZone" aria-selected="false">Đường Dây Nóng Bộ Y
+                Tế</button>
             </li>
           </ul>
           <div class="tab-content text-center" id="myTabContent">
-            <div class="tab-pane fade show active" id="androidBlueZone" role="tabpanel" aria-labelledby="android-tab-bluezone">
+            <div class="tab-pane fade show active" id="androidBlueZone" role="tabpanel"
+              aria-labelledby="android-tab-bluezone">
               <img src="assets/images/bluezone-android.svg" alt="android-ncovi" width="300px">
               <br>
               <a href="https://bluezone.gov.vn/" target="_blank" class="text-primary">Cách hệ thống hoạt động</a>
@@ -142,10 +163,12 @@
               <div class="text-start p-4">
                 <h6 class="text-danger">ĐƯỜNG DÂY NÓNG BỘ Y TẾ</h6>
                 <p>- Điện thoại: <b><a href="callto:19009095" class="text-dark">1900.9095</a></b></p>
-                <p>- Email: <b><a href="mailto:duongdaynong@moh.gov.vn" class="text-dark">duongdaynong@moh.gov.vn</a></b></p>
+                <p>- Email: <b><a href="mailto:duongdaynong@moh.gov.vn"
+                      class="text-dark">duongdaynong@moh.gov.vn</a></b></p>
                 <h6 class="text-danger">THANH TRA BỘ</h6>
                 <p>- Điện thoại: <b><a href="callto:0462732160" class="text-dark">04.62732160</a></b></p>
-                <p class="mb-0">- Email: <b><a href="mailto:thanhtra@moh.gov.vn" class="text-dark">thanhtra@moh.gov.vn</a></b></p>
+                <p class="mb-0">- Email: <b><a href="mailto:thanhtra@moh.gov.vn"
+                      class="text-dark">thanhtra@moh.gov.vn</a></b></p>
               </div>
             </div>
             <p>Ứng dụng cảnh báo nếu bạn đã tiếp xúc gần người nhiễm COVID-19.</p>
