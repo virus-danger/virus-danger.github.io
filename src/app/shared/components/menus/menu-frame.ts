@@ -11,6 +11,11 @@ export const MenuPage = [
         "state_iframe": 'https://corona.kompa.ai'
     },
     {
+        "state_code": "sosmap",
+        "state_name": "SOS Map",
+        "state_iframe": 'https://sosmap.net'
+    },
+    {
         "state_code": "health-declaration",
         "state_name": "Khai Báo Y Tế",
         "state_iframe": 'https://tokhaiyte.vn'
