@@ -431,3 +431,65 @@ input {
     border: 1px solid #e0e0e017;
   }
 }
+
+@keyframes blink-up {
+	from {
+		background: #00942c;
+	}
+	to {
+		background: none;
+	}
+}
+
+@keyframes blink-down {
+	from {
+		background: #a50021;
+	}
+	to {
+		background: none;
+	}
+}
+
+.blinking-up {
+  animation: blink-up 1s infinite;
+	color: inherit;
+	text-decoration: blink;
+/* 	animation-name: blink-up;
+	-webkit-animation-name: blink-up;
+	animation-duration: 0.6s;
+	-webkit-animation-duration: 0.6s;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+	-webkit-animation-direction: alternate; */
+}
+
+.blinking-down {
+  animation: blink-down 1s infinite;
+	color: inherit;
+	text-decoration: blink;
+	/* animation-name: blink-down;
+	-webkit-animation-name: blink-down;
+	animation-duration: 0.6s;
+	-webkit-animation-duration: 0.6s;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-direction: alternate;
+	-webkit-animation-direction: alternate; */
+}
+
+.copyright {
+  @media only screen and (max-width: 400px) {
+    a,
+    span {
+      font-size: 10px;
+    }
+  }
+  .mx_2 {
+    margin: 0 2px;
+  }
+}

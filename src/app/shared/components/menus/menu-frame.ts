@@ -2,6 +2,7 @@ export interface IMenuIFrame {
     state_code: string;
     state_name: string;
     state_iframe?: string;
+    class_name?: string;
 }
 
 export const MenuPage = [
@@ -13,7 +14,8 @@ export const MenuPage = [
     {
         "state_code": "sosmap",
         "state_name": "SOS Map",
-        "state_iframe": 'https://sosmap.net'
+        "state_iframe": 'https://sosmap.net',
+        "class_name": "blinking-down"
     },
     {
         "state_code": "health-declaration",

@@ -5,7 +5,7 @@ import { MenusComponent } from './components/menus/menus.component';
 import { RouterModule } from '@angular/router';
 import { SafeUrlPipe } from './pipes/safe-html.pipe';
 import { LoadingComponent } from './components/loading/loading.component';
-import { FooterComponent } from './components/footer/footer.component';
+import { CopyrightComponent } from './components/copyright/copyright.component';
 
 
 
@@ -15,7 +15,7 @@ import { FooterComponent } from './components/footer/footer.component';
     SafeUrlPipe,
     LoadingComponent,
     MenusCollapseComponent,
-    FooterComponent
+    CopyrightComponent,
   ],
   imports: [
     CommonModule,
@@ -25,7 +25,7 @@ import { FooterComponent } from './components/footer/footer.component';
     MenusComponent,
     LoadingComponent,
     SafeUrlPipe,
-    FooterComponent
+    CopyrightComponent
   ]
 })
 export class SharedModule { }

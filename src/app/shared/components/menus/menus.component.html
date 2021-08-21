@@ -1,13 +1,13 @@
-<h6 class="mt-2 p-2 alert-success text-center">Coronavirus Dashboard</h6>
+<h6 class="mt-2 p-2 text-center blinking-down">Coronavirus Dashboard</h6>
 <ul class="ms-3 scroll-gray list-unstyled" style="max-height: 40vh;">
     <ng-container *ngFor="let item of pages">
         <li>
             <a *ngIf="item?.state_code === 'home'" [routerLink]="['']" [routerLinkActive]="'text-white'" [routerLinkActiveOptions]="{exact: true}" (click)="spin()">{{ item?.state_name }}</a>
-            <a *ngIf="item?.state_code !== 'home'" [routerLink]="['page', item?.state_code]" [routerLinkActive]="'text-white'" (click)="spin()">{{ item?.state_name }}</a>
+            <a *ngIf="item?.state_code !== 'home'" [routerLink]="['page', item?.state_code]" [routerLinkActive]="'text-white'" (click)="spin()" [class]="item?.class_name">{{ item?.state_name }}</a>
         </li>
     </ng-container>
 </ul>
-<h6 class="mt-2 p-2 alert-success text-center">Bản Đồ Thông Tin Dịch Tễ</h6>
+<h6 class="mt-2 p-2 text-center blinking-up">Bản Đồ Thông Tin Dịch Tễ</h6>
 <ul class="ms-3 scroll-gray list-unstyled" style="max-height: calc(100vh - 491px)">
     <ng-container *ngFor="let item of provinces">
         <li>
