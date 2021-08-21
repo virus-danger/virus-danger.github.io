@@ -1,0 +1,11 @@
+.copyright {
+  @media only screen and (max-width: 400px) {
+    a,
+    span {
+      font-size: 11px;
+    }
+  }
+  .ml-2 {
+    margin-left: 2px;
+  }
+}

@@ -21,7 +21,7 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-  #nav { 
+  #nav {
     display: none;
   }
   #navbar {
@@ -79,7 +79,7 @@ body {
   bottom: 0;
   overflow: auto;
 
-  background: url('assets/images/matrix_max.gif');
+  background: url("assets/images/matrix_max.gif");
   min-width: 780px;
 }
 
