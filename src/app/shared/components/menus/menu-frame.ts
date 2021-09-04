@@ -23,6 +23,12 @@ export const MenuPage = [
         "state_iframe": 'https://tokhaiyte.vn'
     },
     {
+        "state_code": "register-person",
+        "state_name": "Đăng Ký Tiêm Vaccine",
+        "state_iframe": 'https://tiemchungcovid19.gov.vn/portal/register-person',
+        "class_name": "blinking-up"
+    },
+    {
         "state_code": "who",
         "state_name": "WHO Covid-19",
         "state_iframe": 'https://covid19.who.int'
