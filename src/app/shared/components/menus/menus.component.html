@@ -8,7 +8,7 @@
     </ng-container>
 </ul>
 <h6 class="mt-2 p-2 text-center blinking-down">Bản Đồ Thông Tin Dịch Tễ</h6>
-<ul class="ms-3 scroll-gray list-unstyled" style="max-height: calc(100vh - 514px)">
+<ul class="ms-3 scroll-gray list-unstyled" style="max-height: calc(100vh - 540px)">
     <ng-container *ngFor="let item of provinces">
         <li>
             <a [routerLink]="['map', item?.state_code]" [routerLinkActive]="'text-white'" (click)="spin()">{{ item?.state_name }}</a>

@@ -1,3 +1,7 @@
-<iframe [src]="url?.state_iframe | safeUrl" class="iframe w-100" allowtransparency="1" allowfullscreen="yes"></iframe>
+<iframe *ngIf="!isVideoUrl" [src]="url?.state_iframe | safeUrl" class="iframe w-100" allowtransparency="1" allowfullscreen="yes"></iframe>
+<video *ngIf="isVideoUrl" style="width:92%" controls>
+    <source [src]="url?.state_iframe | safeUrl" type="video/mp4">
+    <source [src]="url?.state_iframe | safeUrl" type="video/ogg">
+</video>
 <!-- Audio online auto  -->
-<iframe type="text/html" width="0" height="0" src="https://www.youtube.com/embed/RphVghBq2ek?autoplay=1" frameborder="0" allow="autoplay"></iframe>
+<iframe *ngIf="!isVideoUrl" type="text/html" width="0" height="0" src="https://www.youtube.com/embed/RphVghBq2ek?autoplay=1" frameborder="0" allow="autoplay"></iframe>

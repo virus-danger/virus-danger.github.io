@@ -29,6 +29,11 @@ export const MenuPage = [
         "class_name": "blinking-up"
     },
     {
+        "state_code": "training",
+        "state_name": "Sổ Sức Khoẻ Điện Tử",
+        "state_iframe": 'https://thaibinh.gov.vn/upload/80571/20210907/so_suc_khoe_dien_tu_18211407092021_b610a.mp4',
+    },
+    {
         "state_code": "who",
         "state_name": "WHO Covid-19",
         "state_iframe": 'https://covid19.who.int'

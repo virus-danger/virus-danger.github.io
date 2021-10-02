@@ -20,6 +20,41 @@ body {
   background: #26262b;
 }
 
+//======== width .w_? ========*/
+@for $j from 1 to 301 {
+  .w_#{$j} {
+    width: 1px * $j !important;
+  }
+}
+
+//======== min-width .min_w_? ========*/
+@for $j from 1 to 301 {
+  .min_w_#{$j} {
+    min-width: 1px * $j;
+  }
+}
+
+//======== max-width .max_w_? ========*/
+@for $j from 1 to 301 {
+  .max_w_#{$j} {
+    max-width: 1px * $j;
+  }
+}
+
+//======== height .h_? ========*/
+@for $j from 1 to 301 {
+  .h_#{$j} {
+    height: 1px * $j !important;
+  }
+}
+
+/*======== font-size .font_size_? =======*/
+@for $j from 1 to 40 {
+  .font_size_#{$j} {
+    font-size: 1px * $j;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   #nav {
     display: none;
