@@ -10,7 +10,7 @@ import { IframeComponent } from './components/iframe/iframe.component';
 import { HomeComponent } from './components/home/home.component';
 import { MenusCollapseComponent } from './shared/components/menus/menus-collapse.component';
 import { CopyrightComponent } from './shared/components/copyright/copyright.component';
-
+import { PcCovidModalComponent } from './shared/components/pc-covid-modal/pc-covid-modal.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +24,6 @@ import { CopyrightComponent } from './shared/components/copyright/copyright.comp
     SharedModule
   ],
   providers: [],
-  bootstrap: [AppComponent, MenusComponent, MenusCollapseComponent, CopyrightComponent]
+  bootstrap: [AppComponent, MenusComponent, MenusCollapseComponent, CopyrightComponent, PcCovidModalComponent]
 })
 export class AppModule { }

@@ -6,8 +6,8 @@ import { RouterModule } from '@angular/router';
 import { SafeUrlPipe } from './pipes/safe-html.pipe';
 import { LoadingComponent } from './components/loading/loading.component';
 import { CopyrightComponent } from './components/copyright/copyright.component';
-
-
+import { PcCovidModalComponent } from './components/pc-covid-modal/pc-covid-modal.component';
+import { NgxQrcodeStylingModule } from 'ngx-qrcode-styling';
 
 @NgModule({
   declarations: [
@@ -16,16 +16,19 @@ import { CopyrightComponent } from './components/copyright/copyright.component';
     LoadingComponent,
     MenusCollapseComponent,
     CopyrightComponent,
+    PcCovidModalComponent
   ],
   imports: [
     CommonModule,
-    RouterModule 
+    RouterModule,
+    NgxQrcodeStylingModule
   ],
   exports: [
     MenusComponent,
     LoadingComponent,
     SafeUrlPipe,
-    CopyrightComponent
+    CopyrightComponent,
+    PcCovidModalComponent
   ]
 })
 export class SharedModule { }

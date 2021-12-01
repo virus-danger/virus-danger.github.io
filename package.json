@@ -20,6 +20,7 @@
     "@angular/router": "~12.0.4",
     "bootstrap": "^5.0.2",
     "jquery": "^3.6.0",
+    "ngx-qrcode-styling": "^1.0.7",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
